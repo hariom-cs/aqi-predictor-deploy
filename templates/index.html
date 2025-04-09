@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname">
+                Machine Learning with flask
+            </div>
+            <h2>Air Quality Index Prediction</h2>
+        </div>
+    </header>
+
+    <div class="ml-container">
+        <form action="{{url_for('predict')}}" method="post">
+            <p>Click the predict Button </p>
+        <textarea name="message" rows="6" cols="50"></textarea>
+        <br>
+        <input type="submit" class="btn-info" value="predict">
+        </form>
+    </div>
+    
+</body>
+</html>
