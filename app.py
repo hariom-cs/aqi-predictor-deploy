@@ -6,7 +6,9 @@ import pickle
 
 
 #Model load
-loaded_model = pickle.load(open('/home/hariom/Project/AQI-Predictor/Deployement/random_forest_regression_model.pkl', 'rb'))
+loaded_model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+#loaded_model = pickle.load(open('/home/hariom/Project/AQI-Predictor/Deployement/random_forest_regression_model.pkl', 'rb'))
+
 app = Flask(__name__)
 
 
